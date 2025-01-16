@@ -1,0 +1,416 @@
+{
+    "context_rules": [
+        {
+            "literal": "eligibility for",
+            "category": "ELIGIBILITY",
+            "direction": "FORWARD",
+            "pattern": [{"LOWER":  {"IN": ["eligibility", "eligible"]}}, {"LOWER": "for", "OP": "?"}]
+        },
+        {
+            "literal": "not in need of",
+            "category": "PSEUDO",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "does not need",
+            "category": "PSEUDO",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "e.g.",
+            "category": "NOT_RELEVANT",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "[]",
+            "category": "NOT_RELEVANT",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "()",
+            "category": "NOT_RELEVANT",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "{}",
+            "category": "NOT_RELEVANT",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "___",
+            "category": "NOT_RELEVANT",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "appetite",
+            "category": "NOT_RELEVANT",
+            "allowed_types": ["FOOD_INSECURITY", "ACCESS", "FOOD"],
+            "max_scope": 5
+        },
+        {
+            "literal": "Clinical Reminders",
+            "category": "NOT_RELEVANT",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "gave information about",
+            "category": "INFORMATION",
+            "direction": "FORWARD",
+            "pattern": [
+                {"LOWER": {"IN": ["gave", "provided", "attached"]}},
+                {"LOWER": {"IN": ["him", "her", "vet", "Veteran", "the", "patient"]}, "OP": "{,2}"},
+                {"OP": "?"},
+                {"LOWER": {"IN": ["information", "educational"]}},
+                {"LOWER": "materials", "OP": "?"}
+            ],
+            "allowed_types": ["LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "? No",
+            "category": "NEGATED_EXISTENCE",
+            "direction": "BACKWARD",
+            "pattern": [
+                {"LOWER": "?"},
+                {"IS_SPACE": true, "OP": "*"},
+                {"LOWER": "no"}
+            ]
+        },
+        {
+            "literal": ": not noted",
+            "category": "NEGATED_EXISTENCE",
+            "direction": "BACKWARD",
+            "pattern": [
+                {"LOWER": ":"},
+                {"LOWER": {"IN": ["not", "never"]}},
+                {"LOWER": {"IN": ["reported", "noted"]}}
+            ]
+        },
+        {
+            "literal": "no longer",
+            "category": "NEGATED_EXISTENCE",
+            "direction": "FORWARD"
+        },
+        {
+          "category": "NEGATED_EXISTENCE",
+          "literal": "lack of",
+          "pattern": null,
+          "direction": "FORWARD",
+          "excluded_types": ["FOOD_INSECURITY"],
+            "pattern": [
+                {
+                    "LOWER": {"IN": ["lack", "lacked", "lacking"]}
+                },
+                {"LOWER": "of", "OP": "?"}
+            ],
+            "max_scope": 5
+        },
+        {
+            "literal": "not get",
+            "category": "NEGATED_EXISTENCE",
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "$0",
+            "category": "NEGATED_EXISTENCE",
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "reported no",
+            "category": "NEGATED_EXISTENCE",
+            "direction": "FORWARD",
+            "pattern": [
+                {"LOWER": {"IN": ["report", "reports", "reported"]}},
+                {"LOWER": {"IN": ["no", "not", "none"]}}
+            ]
+        },
+        {
+            "literal": "apply for",
+            "category": "SEEKING",
+            "direction": "FORWARD",
+            "pattern": [{"LOWER": {"IN": ["apply", "applied", "applying", "interview", "interviewing", "interviewed", "file", "filing", "filed"]}}, {"LOWER": "for"}],
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "application for",
+            "category": "SEEKING",
+            "direction": "FORWARD",
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "application",
+            "category": "SEEKING",
+            "direction": "BIDIRECTIONAL",
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "reenrolled",
+            "category": "SEEKING",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {"LOWER": {"REGEX": "re(enroll|appl|instat)"}}
+            ],
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "re-enrolled",
+            "category": "SEEKING",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {"LOWER": "re"},
+                {"LOWER": "-", "OP": "?"},
+                {"LOWER": {"REGEX": "(enroll|appl)"}}
+            ],
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"]
+        },
+
+        {
+            "literal": "reinstated",
+            "category": "SEEKING",
+            "direction": "BIDIRECTIONAL",
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "get",
+            "category": "SEEKING",
+            "direction": "FORWARD",
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"],
+            "max_scope": 2
+        },
+        {
+            "literal": "would like",
+            "category": "SEEKING",
+            "direction": "FORWARD",
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "pending",
+            "category": "SEEKING",
+            "direction": "FORWARD",
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "request",
+            "category": "NEED",
+            "direction": "FORWARD",
+            "pattern": [{"LOWER": {"IN": ["request", "requesting", "requests", "requested"]}}]
+        },
+        {
+            "literal": "difficulty paying",
+            "category": "NEED",
+            "direction": "FORWARD",
+            "pattern": [
+                {"LOWER": {"IN": ["difficulty", "difficulties", "challenge", "challenges"]}},
+                {"LOWER": "with", "OP": "?"},
+                {"LOWER": {"IN": ["afford", "affording", "buy", "buying", "pay", "paying", "purchasing", "purchase"]}}
+            ]
+        },
+        {
+            "literal": "not receive",
+            "category": "NEGATED_EXISTENCE",
+            "direction": "FORWARD",
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "need to get",
+            "category": "NEED",
+            "direction": "FORWARD",
+            "pattern": [
+                {"lower": {"IN": ["need", "needs"]}},
+                {"LOWER": "to"},
+                {"lower": {"IN": ["get", "obtain", "secure"]}}
+            ],
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "needs",
+            "category": "NEED",
+            "direction": "FORWARD",
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"],
+            "pattern": [{"LOWER": {"IN": ["need", "needs", "needing"]}}]
+        },
+        {
+            "literal": "lost",
+            "category": "NEED",
+            "direction": "FORWARD",
+            "allowed_types": ["FOOD_ASSISTANCE", "LONG_TERM_FOOD_ASSISTANCE"],
+            "pattern": [{"LOWER": {"IN": ["lost", "losing", "loses"]}}],
+            "max_scope": 5
+        },
+        {
+            "literal": "====",
+            "category": "TERMINATE",
+            "direction": "TERMINATE",
+            "pattern": [
+                {"LOWER": "=", "OP": "{5,}"}
+            ]
+        },
+        {
+            "literal": "no issues with",
+            "category": "NO_ISSUE",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "denies issues",
+            "category": "NO_ISSUE",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": ": no issues",
+            "category": "NO_ISSUE",
+            "direction": "BACKWARD"
+        },
+        {
+            "literal": "not worried",
+            "category": "NO_ISSUE",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "no worries",
+            "category": "NO_ISSUE",
+            "direction": "FORWARD",
+            "pattern": [
+                {"LOWER": "no"},
+                {"LOWER": {"IN": [
+                    "issue", "issues",
+                    "trouble", "troubles",
+                    "worry", "worries",
+                    "concern", "concerns",
+                    "difficulty", "difficulties"
+                ]}},
+                {"LOWER": {"IN": ["with", "about", "regarding"]}, "OP": "?"}
+            ]
+        },
+        {
+            "literal": "gets enough",
+            "category": "NO_ISSUE",
+            "pattern": [
+                {"LOWER": {"IN": ["get", "gets", "getting", "eats", "eating"]}},
+                {"LOWER": "enough"}
+            ],
+            "allowed_types": ["FOOD"]
+        },
+        {
+            "literal": "enrolled in",
+            "category": "ENROLLED",
+            "allowed_types": ["LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "is signed up for",
+            "category": "ENROLLED",
+            "allowed_types": ["LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "is registered for",
+            "category": "ENROLLED",
+            "allowed_types": ["LONG_TERM_FOOD_ASSISTANCE"]
+        },
+
+        {
+            "literal": "receives",
+            "category": "ENROLLED",
+            "pattern": [
+                {"LOWER": {"IN": ["receives", "receiving"]}}
+            ],
+            "allowed_types": ["LONG_TERM_FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "assessed for",
+            "category": "HYPOTHETICAL"
+        },
+        {
+            "literal": "positive",
+            "category": "POSITIVE"
+        },
+        {
+            "literal": "positive for",
+            "category": "POSITIVE",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "? Yes",
+            "category": "POSITIVE",
+            "direction": "BACKWARD",
+            "pattern": [
+                {"LOWER": "?"},
+                {"IS_SPACE": true, "OP": "*"},
+                {"LOWER": "yes"}
+            ]
+        },
+        {
+            "literal": "denied needing",
+            "category": "DENIED",
+            "direction": "FORWARD",
+            "allowed_types": ["LONG_TERM_FOOD_ASSISTANCE", "FOOD_ASSISTANCE"]
+        },
+        {
+            "literal": "declined education",
+            "category": "PSEUDO",
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "afford",
+            "category": "AFFORD",
+            "pattern": [{"LOWER": {"IN": ["afford", "affords", "affording"]}}]
+        },
+        {
+            "literal": "worried",
+            "category": "WORRY",
+            "pattern": [{"LOWER": {"IN": ["worry", "worries", "worrying", "worried"]}}]
+
+        },
+        {
+            "literal": "sufficient funds",
+            "category": "AFFORD",
+            "direction": "FORWARD",
+            "pattern": [
+                {"LOWER": {"IN": ["sufficient", "enough"]}},
+                {"LOWER": {"IN": ["money", "funds", "finances"]}}
+            ],
+            "allowed_types": ["FOOD"]
+        },
+        {
+            "literal": "assist",
+            "category": "ASSISTANCE"
+        },
+        {
+            "literal": "assist him with",
+            "category": "ASSISTANCE",
+            "pattern": [
+                {"LOWER": "assist"},
+                {"LOWER": {"IN": ["him", "her", "the", "veteran", "patient"]}, "OP": "?"},
+                {"LOWER": "with"}
+
+            ],
+            "direction": "FORWARD"
+        },
+        {
+            "literal": "confirm",
+            "category": "CONFIRM",
+            "pattern": [{"LOWER": {"IN": ["confirm", "confirms", "confirmed", "confirming"]}}]
+        },
+        {
+            "literal": "report",
+            "category": "CONFIRM",
+            "pattern": [{"LOWER": {"IN": ["report", "reports", "reported", "reporting"]}}]
+        },
+        {
+            "literal": "assess for",
+            "category": "HYPOTHETICAL",
+            "direction": "FORWARD",
+            "pattern": [
+                {"LOWER": {"REGEX": "assess"}},
+                {"LOWER": "for"}
+            ]
+        },
+        {
+            "literal": "in the past",
+            "category": "HISTORICAL"
+        },
+        {
+            "literal": "previous",
+            "category": "HISTORICAL",
+            "pattern": [{"LOWER": {"IN": ["previous", "previously"]}}]
+        }
+
+    ]
+}

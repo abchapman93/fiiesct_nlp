@@ -1,0 +1,187 @@
+{
+    "target_rules": [
+        {
+            "literal": "food stamps",
+            "category": "LONG_TERM_FOOD_ASSISTANCE",
+            "pattern": [{"LOWER": "food"}, {"LOWER": {"IN": ["stamp", "stamps"]}}]
+        },
+        {
+            "literal": "food stamp office",
+            "category": "LONG_TERM_FOOD_ASSISTANCE",
+            "pattern": [
+                {"LOWER": "food"},
+                {"LOWER": {"IN": ["stamp", "stamps"]}},
+                {"LOWER": {"IN": ["office", "offices"]}}
+            ],
+            "attributes": {"is_seeking": true}
+        },
+        {
+            "literal": "food stamps: $0",
+            "category": "LONG_TERM_FOOD_ASSISTANCE",
+            "attributes": {"is_negated": true}
+        },
+        {
+            "literal": "SNAP",
+            "category": "LONG_TERM_FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "SNAP application",
+            "category": "LONG_TERM_FOOD_ASSISTANCE",
+            "attributes": {"is_seeking": true}
+        },
+        {
+            "literal": "Strengths/Needs/Abilities/Preferences (SNAP):",
+            "category": "PSEUDO"
+        },
+        {
+            "literal": "WIC",
+            "category": "LONG_TERM_FOOD_ASSISTANCE",
+            "pattern": [{"TEXT": "WIC"}]
+        },
+        {
+            "literal": "supplemental nutrition assistance program",
+            "category": "LONG_TERM_FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "food stamp program",
+            "category": "LONG_TERM_FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "CalFresh",
+            "category": "LONG_TERM_FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "ebt card",
+            "category": "LONG_TERM_FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "electronic benefit card",
+            "category": "LONG_TERM_FOOD_ASSISTANCE",
+            "pattern": [
+                {"LOWER": "electronic"},
+                {"LOWER": "benefit"},
+                {"LOWER": "card"}
+            ]
+        },
+        {
+            "literal": "meals on wheels",
+            "category": "LONG_TERM_FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "meals on wheels",
+            "category": "LONG_TERM_FOOD_ASSISTANCE",
+            "pattern": [{"TEXT": "MOW"}],
+            "metadata": {"comments": "Abbreviation for Meals on Wheels. Requiring all capitals to avoid amibguity."}
+        },
+        {
+            "literal": "access to food stamps",
+            "category": "LONG_TERM_FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "food bank",
+            "category": "FOOD_ASSISTANCE",
+            "pattern": [{"LOWER": "food"}, {"LOWER": {"IN": ["bank", "banks"]}}]
+        },
+        {
+            "literal": "food pantry",
+            "category": "FOOD_ASSISTANCE",
+            "pattern": [{"LOWER": "food"}, {"LOWER": {"IN": ["pantry", "pantries"]}}]
+        },
+        {
+            "literal": "food pantry",
+            "category": "FOOD_ASSISTANCE",
+            "pattern": [{"LOWER": "local"}, {"LOWER": {"IN": ["pantry", "pantries"]}}]
+        },
+        {
+            "literal": "food from the pantry",
+            "category": "FOOD_ASSISTANCE",
+            "pattern": [
+                {"LOWER": "food"},
+                {"LOWER": "from"},
+                {"LOWER": {"IN": ["a", "the"]}, "OP": "?"},
+                {"OP": "?"},
+                {"LOWER": "pantry"}
+            ]
+        },
+        {
+            "literal": "food bank",
+            "category": "FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "food assistance",
+            "category": "FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "food voucher",
+            "category": "FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "food resources",
+            "category": "FOOD_ASSISTANCE",
+            "pattern": [{"LOWER":  "food"}, {"LOWER": {"IN": ["resource","resources"]}}],
+            "attributes": {"is_ignored": true}
+        },
+        {
+            "literal": "Xxx Pantry",
+            "category": "FOOD_ASSISTANCE",
+            "pattern": [{"IS_TITLE": true}, {"LOWER":  "'s", "OP": "?"}, {"TEXT": "Pantry"}],
+            "metadata": {"comments": "'Patriot Pantry'"}
+        },
+        {
+            "literal": "assistance with food",
+            "category": "FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "assistance with food insecurity",
+            "category": "FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "food box",
+            "category": "FOOD_ASSISTANCE",
+            "pattern": [
+                {"LOWER": "food"},
+                {"LOWER": {"IN": ["bag", "box", "bags", "boxes"]}}
+            ]
+        },
+        {
+            "literal": "food voucher",
+            "category": "FOOD_ASSISTANCE",
+            "pattern": [
+                {"LOWER": {"IN": ["food", "meal", "meals"]}},
+                {"LOWER": {"IN": ["voucher", "vouchers"]}}
+            ]
+        },
+        {
+            "literal": "access to food assistance",
+            "category": "FOOD_ASSISTANCE",
+            "pattern": [
+                {"LOWER": "access"},
+                {"LOWER": "to"},
+                {"LOWER": "food"},
+                {"LOWER": {"IN": ["bank", "banks", "bag", "bags", "box", "boxes", "assistance"]}}
+            ]
+        },
+        {
+            "literal": "Veteran was provided with community food bank and meal resources? Yes",
+            "category": "FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "Veteran was provided with community food bank and meal resources? No",
+            "category": "FOOD_ASSISTANCE",
+            "attributes": {"is_negated": true}
+        },
+        {
+            "literal": "United Way 211",
+            "category": "FOOD_ASSISTANCE"
+        },
+        {
+            "literal": "call 211",
+            "category": "FOOD_ASSISTANCE",
+            "pattern": "call 2-?1-?1"
+        },
+        {
+            "literal": "Veteran was provided with community food bank and meal resources?",
+            "category": "TEMPLATE"
+        }
+    ]
+}

@@ -1,0 +1,431 @@
+{
+    "target_rules": [
+        {
+            "literal": "food insecurity",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": "food"},
+                {"IS_SPACE": true, "OP": "*"},
+                {"LOWER": {"REGEX": "insecur"}}
+            ]
+        },
+		{
+            "literal": "low food security",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": "low"},
+				{"LOWER": "food"},
+                {"LOWER":  "security"}
+            ]
+        },
+        {
+            "literal": "insufficient food",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["insufficient", "inadequate"]}},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "ran out of food",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["runs", "ran", "run"]}},
+                {"LOWER": "out"},
+                {"LOWER": "of"},
+                {"LOWER": "food"}
+
+            ]
+        },
+        {
+            "literal": "food ran out",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": "food"},
+                {"LOWER": {"IN": ["runs", "ran"]}},
+                {"LOWER": "out"}
+            ]
+        },
+        {
+            "literal": "food shortage",
+            "category": "FOOD_INSECURITY"
+        },
+        {
+            "literal": "shortage of food",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": {"REGEX": "short"}},
+                {},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "difficulty getting food",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": "difficulty"},
+                {"LOWER": {"IN": ["getting", "affording"]}},
+                {"LOWER": {"IN": ["food", "meals"]}}
+            ]
+        },
+        {
+            "literal": "limited food access",
+            "category": "FOOD_INSECURITY"
+        },
+        {
+            "literal": "food insecurity: no",
+            "category": "FOOD_INSECURITY",
+            "attributes": {"is_negated": true},
+            "pattern": [
+                {"LOWER": "food"},
+                {"LOWER": "insecurity"},
+                {"LOWER": {"IN": ["issues", "concerns", "problems"]}, "OP": "?"},
+                {"LOWER": {"IN": [":","?"]}},
+                {"IS_SPACE": true, "OP": "*"},
+                {"LOWER": "no"}
+            ]
+        },
+        {
+            "literal": "limited access to food",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["limited", "poor", "insufficient", "inadequate"]}},
+                {"LOWER": {"IN": ["access", "funds"]}},
+                {"LOWER": {"IN": ["to", "for"]}},
+                {"LOWER": {"IN": ["food", "meals"]}}
+            ]
+        },
+        {
+            "literal": "problems accessing food",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["problem", "problems", "issue", "issues", "limited", "unable", "concern", "concerns", "concerned"]}},
+                {"OP": "?"},
+                {"LOWER": {"IN": ["access", "accessing", "obtain", "obtaining", "afford", "affording", "purchase", "purchasing", "buy", "buying"]}},
+                {"OP": "?"},
+                {"LOWER": {"IN": ["food", "meals"]}}
+            ]
+        },
+        {
+            "literal": "problems with food insecurity",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["problem", "problems", "issue", "issues", "concern", "concerned", "concerns"]}},
+                {"OP": "?"},
+                {"LOWER": "food"},
+                {"LOWER": {"IN": ["security", "insecurity"]}}
+            ]
+        },
+        {
+            "literal": "no problems accessing food",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["no", "denies", "denies"]}},
+                {"LOWER": {"IN": ["problem", "problems", "issue", "issues", "limited", "unable"]}},
+                {"OP": "?"},
+                {"LOWER": {"IN": ["access", "accessing", "obtain", "obtaining"]}},
+                {"OP": "?"},
+                {"LOWER": {"IN": ["food", "meals"]}}
+            ],
+            "attributes": {"is_negated": true}
+        },
+        {
+            "literal": "doesn't have enough food",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": "does"},
+                {"LOWER": {"IN": ["not", "n't"]}},
+                {"LOWER": "have"},
+                {"LOWER": {"IN": ["enough", "sufficient", "adequate", "very", "much", "a", "lot", "of"]}, "OP": "+"},
+                {"OP": "?"},
+                {"LOWER": "food"},
+                {"LOWER": {"NOT_IN": ["shortage", "need", "needs", "assistance"]}}
+
+            ]
+        },
+        {
+            "literal": "Food insecurity: 0",
+            "category": "FOOD_INSECURITY",
+            "attributes": {"is_ignored": true},
+            "pattern": [
+                {"LOWER": "food"},
+                {"LOWER": "insecurity"},
+                {"LOWER": ":"},
+                {"IS_SPACE": true, "OP": "*"},
+                {"LOWER": "0"}
+            ]
+        },
+        {
+            "literal": "Food insecurity screen:",
+            "category": "FOOD_INSECURITY_SCREEN",
+            "pattern": [
+                {"LOWER":  "food"},
+                {"LOWER":  "insecurity"},
+                {"LOWER":  {"IN": ["screen", "screening"]}},
+                {"LOWER":  ":", "OP": "?"}
+            ]
+        },
+        {
+            "literal": "Does veteran have food shortage, no money to buy food or lacks access to food?",
+            "category": "FOOD_INSECURITY_SCREEN",
+            "pattern": "Does[\\s]+veteran[\\s]+have[\\s]+food[\\s]+shortage,[\\s]+no[\\s]+money[\\s]+to[\\s]+buy[\\s]+food[\\s]+or[\\s]+lacks[\\s]+access[\\s]+to[\\s]+food\\?"
+        },
+        {
+            "literal": "screened for food insecurity",
+            "category": "FOOD_INSECURITY_SCREEN_UNSTRUCTURED",
+            "pattern": [
+                {"LOWER":  {"IN": ["screen", "screening", "screened"]}},
+                {"LOWER":  "for"},
+                {"LOWER":  "food"},
+                {"LOWER":  "insecurity"}
+            ]
+        },
+        {
+            "literal": "Homelessness/Food Insecurity Screener",
+            "category": "FOOD_INSECURITY_SCREEN",
+            "pattern": [
+                {"LOWER": {"REGEX": "homeless"}},
+                {"LOWER": "/"},
+                {"LOWER": "food"},
+                {"LOWER": "insecurity"},
+                {"LOWER": {"REGEX": "screen"}}
+            ]
+        },
+
+        {
+            "literal": "food and Xxx insecurity",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": "food"},
+                {"LOWER": {"IN": [ "and", "/"]}},
+                {},
+                {"LOWER": "insecurity"}
+            ]
+        },
+        {
+            "literal": "don't have any food",
+            "category": "FOOD_INSECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["do", "does"]}},
+                {"LOWER": {"IN": ["n't", "nt", "not"]}},
+                {"LOWER": "have"},
+                {"LOWER": {"IN": ["enough", "any", "sufficient", "ample", "adequate"]}},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "Food insecurity screen (v1)",
+            "category": "FOOD_INSECURITY_SCREEN",
+            "pattern": "(With)?in[\\s]+the[\\s]+past[\\s]+[0-9]+[\\s]+months,[\\s]+you[\\s]+worried[\\s]+whether[\\s]+your[\\s]+food[\\s]+would[\\s]+run[\\s]+out[\\s]+before[\\s]+you[\\s]+got[\\s]+money[\\s]+to[\\s]+buy[\\s]+more."
+        },
+        {
+            "literal": "Food insecurity screen (v1)",
+            "category": "FOOD_INSECURITY_SCREEN",
+            "pattern": "(With)?in[\\s]+the[\\s]+past[\\s]+[0-9]+[\\s]+months,[\\s]+the[\\s]+food[\\s]+you[\\s]+bought[\\s]+just[\\s]+didn't[\\s]+last[\\s]+and[\\s]+you[\\s]+didn't[\\s]+have[\\s]+money[\\s]+to[\\s]+get[\\s]+more."
+        },
+        {
+            "literal": "Food insecurity screen (v1)",
+            "category": "FOOD_INSECURITY_SCREEN",
+            "pattern": "In[\\s]+the[\\s]+past[\\s]+(three|six|twelve)[\\s]+months[\\s]+did[\\s]+you[\\s]+ever[\\s]+run[\\s]+out[\\s]+of[\\s]+food[\\s]+and[\\s]+you[\\s]+were[\\s]+not[\\s]+able[\\s]+to[\\s]+access[\\s]+more[\\s]+food[\\s]+or[\\s]+have[\\s]+the[\\s]+money[\\s]+to[\\s]+buy[\\s]+more[\\s]+food\\?"
+        },
+        {
+            "literal": "Food insecurity screen (v2)",
+            "category": "FOOD_INSECURITY_SCREEN",
+            "pattern": "Currently,[\\s]+you[\\s]+don't[\\s]+have[\\s]+enough[\\s]+money[\\s]+to[\\s]+get[\\s]+food[\\s]+OR[\\s]+you[\\s]+are[\\s]+worried[\\s]+that[\\s]+your[\\s]+food[\\s]+will[\\s]+run[\\s]+out[\\s]+before[\\s]+you[\\s]+get[\\s]+money[\\s]+to[\\s]+buy[\\s]+more\\.[\\s]+"
+        },
+        {
+            "literal":"Food insecurity screen (v2)",
+            "category": "FOOD_INSECURITY_SCREEN",
+            "pattern": "(with)?In[\\s]+the[\\s]+past[\\s]+[0-9]+[\\s]+months,?[\\s]+did[\\s]+you[\\s]+ever[\\s]+run[\\s]+out[\\s]+of[\\s]+food[\\s]+and[\\s]+(you[\\s]+)?were[\\s]+not[\\s]+able[\\s]+to[\\s]+access[\\s]+more[\\s]+food[\\s]+or[\\s]+(have[\\s]+the[\\s]+)?money[\\s]+to[\\s]+buy[\\s]+more[\\s]+food\\?"
+        },
+        {
+            "literal":"Food insecurity screen (v2)",
+            "category": "FOOD_INSECURITY_SCREEN",
+            "pattern": "(with)?In[\\s]+the[\\s]+past[\\s]+[0-9]+[\\s]+months,?[\\s]+did[\\s]+you[\\s]+worry[\\s]+that[\\s]+food[\\s]+would[\\s]+run[\\s]+out[\\s]+and[\\s]+you[\\s]+wouldn't[\\s]+have[\\s]+money[\\s]+to[\\s]+buy[\\s]+more\\?"
+        },
+        {
+            "literal": "Food insecurity screen",
+            "category": "FOOD_INSECURITY_SCREEN",
+            "pattern": "(with)?In[\\s]+the[\\s]+past[\\s]+three[\\s]+months,[\\s]+did[\\s]+you[\\s]+ever[\\s]+run[\\s]+out[\\s]+of[\\s]+food[\\s]+and[\\s]+you[\\s]+were[\\s]+not[\\s]+able[\\s]+to[\\s]+access[\\s]+more[\\s]+food[\\s]+or[\\s]+have[\\s]+the[\\s]+money[\\s]+to[\\s]+buy[\\s]+more[\\s]+food\\?[\\s]*"
+        },
+        {
+            "literal": "Food insecurity screen (distorted)",
+            "category": "FOOD_INSECURITY_SCREEN",
+            "pattern": "ever[\\s]+run[\\s]+out[\\s]+of[\\s]+food[\\s]+and[\\s]+(you[\\s]+)?(were[\\s]+)?not[\\s]+able[\\s]+to[\\s]+access[\\s]+more[\\s]+food"
+
+        },
+        {
+            "literal": "food security",
+            "category": "FOOD_SECURITY",
+            "pattern": [
+                {"LOWER": "food"},
+                {"LOWER": {"IN": ["secure", "security"]}}
+            ]
+        },
+        {
+            "literal": "sufficient food",
+            "category": "FOOD_SECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["sufficient"]}},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "has enough food",
+            "category": "FOOD_SECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["has", "have", "had"]}},
+                {"LOWER": "enough"},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "reports he/she has food",
+            "category": "FOOD_SECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["reports", "says", "confirms", "verifies", "verified", "confirmed", "states", "stated"]}},
+                {"OP": "?"},
+                {"LOWER": {"IN": ["he", "she", "veteran"]}},
+                {"LOWER": {"IN": ["has", "have", "had"]}},
+                {"LOWER": "enough", "OP": "?"},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "good with food",
+            "category": "FOOD_SECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["good", "okay"]}},
+                {"LOWER": {"IN": ["with", "on", "regarding", "re", "in"]}},
+                {"LOWER": {"IN": [":", "respect"]}, "OP": "?"},
+                {"LOWER": "to", "OP": "?"},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "has enough money for food",
+            "category": "FOOD_SECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["has", "have", "had"]}},
+                {"LOWER": {"IN": ["enough", "adequate"]}},
+                {"LOWER": {"IN": ["money", "funds", "access"]}},
+                {"LOWER": {"IN": ["to","for"]}},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "can afford food",
+            "category": "FOOD_SECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["can", "able"]}},
+                {"LOWER": "to", "OP": "?"},
+                {"LOWER": {"IN": ["afford", "get", "access"]}},
+                {"OP": "?"},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "has plenty of food",
+            "category": "FOOD_SECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["has", "have", "had"]}},
+                {"LOWER": "plenty"},
+                {"LOWER": "of"},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "enough food? Yes",
+            "category": "FOOD_SECURITY"
+        },
+
+        {
+            "literal": "food: sufficient",
+            "category": "FOOD_SECURITY",
+            "pattern": [{"LOWER": "food"}, {"LOWER": {"IN": ["sufficient", "enough", "suffices"]}}]
+        },
+        {
+            "literal": "sufficient access to food",
+            "category": "FOOD_SECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["sufficient", "adequate", "good", "enough", "ample", "plenty", "abundant"]}},
+                {"OP": "?"},
+                {"LOWER": "access"},
+                {"LOWER": "to"},
+                {"OP": "?"},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "access to enough food",
+            "category": "FOOD_SECURITY",
+            "pattern": [
+                {"LOWER": "access"},
+                {"LOWER": "to"},
+                {"LOWER": {"IN": ["sufficient", "adequate", "good", "enough", "ample", "plenty", "abundant"]}},
+                {"OP": "?"},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "Do you have access to food? Yes",
+            "category": "FOOD_SECURITY",
+            "pattern": [
+                {"LOWER": "do"},
+                {"LOWER": "you"},
+                {"LOWER": "have"},
+                {"LOWER": "access"},
+                {"LOWER": "to"},
+                {"LOWER": "food"},
+                {"LOWER": "?"},
+                {"IS_SPACE": true, "OP": "*"},
+                {"LOWER": "yes"}
+            ]
+        },
+        {
+            "literal": "Veteran shared challenges to obtaining more than one meal a day? Yes",
+            "category": "FOOD_INSECURITY"
+        },
+
+        {
+            "literal": "Veteran shared challenges to obtaining more than one meal a day? No",
+            "category": "FOOD_INSECURITY",
+            "attributes": {"is_negated": true}
+        },
+
+
+        {
+            "literal": "Veteran was provided with community food bank and meal resources? No",
+            "category": "FOOD_ASSISTANCE",
+            "attributes": {"is_negated": true}
+        },
+        {
+            "literal": "they have access to food",
+            "category": "FOOD_SECURITY",
+            "pattern": [
+                {"LOWER": {"IN": ["he", "she", "vet", "veteran", "patient"]}},
+                {"LOWER": "has"},
+                {"LOWER": "access"},
+                {"LOWER": "to"},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "Does Veteran report having adequate food?\\r\\nIf no,",
+            "category": "TEMPLATE",
+            "pattern": [
+                {"LOWER": "does"},
+                {"LOWER": "the", "OP": "?"},
+                {"LOWER": "veteran"},
+                {"LOWER": "report"},
+                {"LOWER": "having"},
+                {"LOWER": "adequate"},
+                {"LOWER": "food"},
+                {"LOWER": "?"},
+                {"IS_SPACE": true, "OP": "*"},
+                {"LOWER": "if"},
+                {"LOWER": "no"}
+            ]
+        }
+    ]
+}

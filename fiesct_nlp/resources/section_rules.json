@@ -1,0 +1,49 @@
+{
+    "section_rules": [
+        {
+            "literal": "Past Medical History",
+            "category": "past_medical_history",
+            "pattern": [
+                {"LOWER": {"IN": ["past", "previous"]}, "OP": "?"},
+                {"LOWER": "medical"},
+                {"LOWER": {"IN": ["history", "hx"]}},
+                {"LOWER": ":", "OP": "?"}
+            ]
+        },
+        {
+            "literal": "Nutrition Screen",
+            "category": "nutrition",
+            "pattern": [
+                {"LOWER": "nutrition"},
+                {"LOWER": {"IN": ["screen", "screening","screener"]}}
+            ]
+        },
+        {
+            "literal": "FAMILY XX HISTORY:",
+            "category": "family_history",
+            "pattern": [
+                {"LOWER": "family"},
+                {"OP": "?"},
+                {"LOWER": {"IN": ["history", "hx"]}},
+                {"LOWER": ":"}
+            ]
+        },
+        {
+            "literal": "FINANCIAL INFORMATION:",
+            "category": "social_history"
+        },
+        {
+          "literal": "clinical reminders:",
+          "category": "clinical_reminders"
+        },
+        {
+            "literal": "Health Care for Homeless Veterans (HCHV) Program enrolled in:",
+            "category": "intake_form"
+        },
+        {
+            "literal": "Reviewed budget:",
+            "category": "budget"
+        }
+
+    ]
+}

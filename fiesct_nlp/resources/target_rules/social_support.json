@@ -1,0 +1,78 @@
+{
+    "target_rules": [
+        {
+            "literal": "social support",
+            "category": "SOCIAL_SUPPORT"
+        },
+        {
+            "literal": "friends",
+            "category": "SOCIAL_SUPPORT",
+            "pattern": [{"LOWER": {"IN": ["friend", "friends"]}}]
+        },
+        {
+            "literal": "roommate",
+            "category": "SOCIAL_SUPPORT"
+        },
+        {
+            "literal": "room mate",
+            "category": "SOCIAL_SUPPORT"
+        },
+        {
+            "literal": "neighbor",
+            "category": "SOCIAL_SUPPORT",
+            "pattern": [{"LOWER": {"IN": ["neighbor", "neighbors"]}}]
+        },
+        {
+            "literal": "family",
+            "category": "SOCIAL_SUPPORT",
+            "pattern": [
+                {"LOWER":
+                    {"IN": [
+                        "father",
+                        "fathers",
+                        "girlfriend",
+                        "boyfriend",
+                        "fiance",
+                        "fiancee",
+                        "mother",
+                        "mothers",
+                        "brother",
+                        "brothers",
+                        "sister",
+                        "sisters",
+                        "friend",
+                        "buddy",
+                        "buddies",
+                        "friends",
+                        "daughter",
+                        "daughters",
+                        "son",
+                        "sons",
+                        "grandson",
+                        "grandsons",
+                        "grandparent",
+                        "grandparents",
+                        "grandfather",
+                        "grandfathers",
+                        "grandmother",
+                        "grandmothers",
+                        "granddaughter",
+                        "granddaughters",
+                        "relative",
+                        "relatives",
+                        "niece",
+                        "nieces",
+                        "nephew",
+                        "nephews",
+                        "uncle",
+                        "uncles",
+                        "aunt",
+                        "aunts",
+                        "parent",
+                        "parents"
+                    ]}
+                }
+            ]
+        }
+    ]
+}

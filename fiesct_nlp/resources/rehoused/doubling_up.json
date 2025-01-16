@@ -1,0 +1,194 @@
+{
+    "target_rules": [
+        {
+            "literal": "doubling up",
+            "category": "DOUBLING_UP",
+            "pattern": [
+                {
+                    "LEMMA": "double"
+                },
+                {
+                    "LOWER": "up"
+                }
+            ]
+        },
+        {
+            "literal": "X's apartment",
+            "category": "DOUBLING_UP",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "FAMILY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "LOWER": "'",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "s",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "apartment",
+                            "house",
+                            "home"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "staying with their <FAMILY>",
+            "category": "DOUBLING_UP",
+            "pattern": [
+                {
+                    "LEMMA": {
+                        "IN": [
+                            "stay",
+                            "sleep",
+                            "crash"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "with"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "concept_tag": "FAMILY"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "living with <PRON>",
+            "category": "DOUBLING_UP",
+            "pattern": [
+                {
+                    "LEMMA": {
+                        "IN": [
+                            "stay",
+                            "sleep",
+                            "crash"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "with"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "POS": "PRON"
+                }
+            ]
+        },
+        {
+            "literal": "crashing at",
+            "category": "DOUBLING_UP",
+            "pattern": [
+                {
+                    "LOWER": "crashing"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "at",
+                            "with"
+                        ]
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": "FAMILY"
+                    },
+                    "OP": "*"
+                }
+            ]
+        },
+        {
+            "literal": "at <FAMILY> <RESIDENCE>",
+            "category": "DOUBLING_UP",
+            "pattern": [
+                {
+                    "LOWER": "at",
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "concept_tag": "FAMILY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "LOWER": "'s"
+                },
+                {
+                    "_": {
+                        "concept_tag": "RESIDENCE"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "<PATIENT> <FAMILY> <RESIDENCE>",
+            "category": "DOUBLING_UP",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "PATIENT"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": "FAMILY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "LOWER": "'s",
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "concept_tag": "RESIDENCE"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "sleeping on the couch",
+            "category": "DOUBLING_UP",
+            "pattern": [
+                {
+                    "LEMMA": "sleep"
+                },
+                {
+                    "LOWER": "on"
+                },
+                {
+                    "POS": "DET"
+                },
+                {
+                    "LOWER": "couch"
+                }
+            ]
+        },
+        {
+            "literal": "couch surfing",
+            "category": "DOUBLING_UP"
+        }
+    ]
+}

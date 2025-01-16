@@ -1,0 +1,38 @@
+{
+    "target_rules": [
+        {
+            "literal": "no safety",
+            "category": "PSEUDO"
+        },
+        {
+            "literal": "VOA",
+            "category": "PSEUDO",
+            "pattern": [
+                {"LOWER": {"IN": ["voa"]}}
+            ]
+        },
+        {
+            "literal": "food insecurity/housing",
+            "category": "TEMPLATE"
+        },
+
+        {
+            "literal": "<FOOD ORGANIZATION>",
+            "category": "PSEUDO",
+            "pattern": [
+                {"LOWER": "volunteers"},
+                {"LOWER": "of"},
+                {"LOWER": "america"}
+            ]
+        },
+        {
+            "literal": "<FOOD ORGANIZATION>",
+            "category": "PSEUDO",
+            "pattern": [
+                {"LOWER": "civil"},
+                {"LOWER": "air"},
+                {"LOWER": "patrol"}
+            ]
+        }
+    ]
+}

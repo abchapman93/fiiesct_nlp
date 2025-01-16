@@ -1,0 +1,581 @@
+{
+    "target_rules": [
+        {
+            "literal": "shelter",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "homeless",
+                            "community"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "shelter"
+                }
+            ]
+        },
+        {
+            "literal": "shelter staff",
+            "category": "IGNORE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "homeless",
+                            "community"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "shelter"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "staff"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "Xxx Shelter",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "IS_TITLE": true,
+                    "OP": "+"
+                },
+                {
+                    "TEXT": "Shelter"
+                },
+                {
+                    "LOWER": "staff",
+                    "OP": "!"
+                }
+            ]
+        },
+        {
+            "literal": "bed space",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "the Domiciliary",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": "the"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "domiciliary",
+                            "dom"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "temporary housing",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^temp"
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "residence",
+                            "housing"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "transitional housing",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "tran?sitional"
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "housing",
+                            "house",
+                            "home"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "transitional housing",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "RESIDES"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "tran?sitional"
+                    }
+                },
+                {
+                    "POS": {
+                        "IN": [
+                            "NOUN",
+                            "ADJ",
+                            "PRON"
+                        ]
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "<RESIDES> transitional <NOUN>",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "VA_SERVICE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "LOWER": "transitional"
+                },
+                {
+                    "LOWER": "housing"
+                }
+            ]
+        },
+        {
+            "literal": "T-housing",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": "t"
+                },
+                {
+                    "LOWER": "-"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "hous(e|ing)"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "recovery home",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "halfway house",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "odyssey house",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "fellowship house",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "salvation army",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "volunteers of america",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "volunteers of america",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": "voa"
+                }
+            ]
+        },
+        {
+            "literal": "shelter for the homeless",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "house rules",
+            "category": "IGNORE",
+            "pattern": [
+                {
+                    "LOWER": "the",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "house"
+                },
+                {
+                    "LOWER": "rules"
+                }
+            ]
+        },
+        {
+            "literal": "house meetings",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": "house"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^meeting"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "staying at the Xxxx",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LEMMA": "stay"
+                },
+                {
+                    "LOWER": "at"
+                },
+                {
+                    "LOWER": "the",
+                    "OP": "?"
+                },
+                {
+                    "IS_TITLE": true,
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "at the <NOUN> mission",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "at",
+                            "in"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "the",
+                    "OP": "?"
+                },
+                {
+                    "POS": {
+                        "IN": [
+                            "PROPN",
+                            "NOUN",
+                            "ADJ"
+                        ]
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "mission"
+                }
+            ]
+        },
+        {
+            "literal": "living at X",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": "living"
+                },
+                {
+                    "LOWER": "at"
+                },
+                {
+                    "LOWER": "the",
+                    "OP": "?"
+                },
+                {
+                    "POS": {
+                        "IN": [
+                            "NOUN",
+                            "ADJ",
+                            "PROPN"
+                        ]
+                    },
+                    "OP": "+",
+                    "IS_TITLE": true
+                }
+            ]
+        },
+        {
+            "literal": "living in the <TEMPORARY_HOUSING>",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LEMMA": {
+                        "IN": [
+                            "reside",
+                            "live"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "in",
+                            "at"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "the",
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "concept_tag": "TEMPORARY_HOUSING"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "nursing home",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "Xxxx's House",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "IS_TITLE": true,
+                    "OP": "+"
+                },
+                {
+                    "TEXT": "'"
+                },
+                {
+                    "TEXT": "s"
+                },
+                {
+                    "TEXT": "House"
+                }
+            ]
+        },
+        {
+            "literal": "Xxxx's House",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "IS_TITLE": true,
+                    "OP": "+"
+                },
+                {
+                    "TEXT": "'"
+                },
+                {
+                    "TEXT": "s"
+                },
+                {
+                    "TEXT": "Home"
+                }
+            ]
+        },
+        {
+            "literal": "Xxxx House",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "IS_TITLE": true,
+                    "OP": "+",
+                    "POS": {
+                        "NOT_IN": [
+                            "VERB"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "House",
+                            "house",
+                            "Home"
+                        ]
+                    }
+                },
+                {
+                    "IS_TITLE": true,
+                    "OP": "?"
+                }
+            ]
+        },
+        {
+            "literal": "House Xxxx",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "IS_TITLE": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "House",
+                            "house"
+                        ]
+                    }
+                },
+                {
+                    "IS_TITLE": true,
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "community housing",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "Domiciliary patient",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "Domiciliary",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": "domiciliary",
+                    "IS_UPPER": false
+                }
+            ]
+        },
+        {
+            "literal": "Housing Status: <TEMPORARY_HOUSING>",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": "housing"
+                },
+                {
+                    "LOWER": "status"
+                },
+                {
+                    "LOWER": ":"
+                },
+                {
+                    "_": {
+                        "concept_tag": "TEMPORARY_HOUSING"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "<RESIDES> <TEMPORARY_HOUSING>",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "RESIDES"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": "TEMPORARY_HOUSING"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "at <TEMPORARY_HOUSING>",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "in",
+                            "at"
+                        ]
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": "TEMPORARY_HOUSING"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "emergency housing",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "room and board",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "residential facility",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "shared residence",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "re-entry house",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": "re-?entry (home|house)"
+        },
+        {
+            "literal": "hotel",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "rent a hotel",
+            "category": "TEMPORARY_HOUSING"
+        },
+        {
+            "literal": "veterans haven",
+            "category": "TEMPORARY_HOUSING",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "vet",
+                            "vets",
+                            "veteran"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "'s",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "haven"
+                }
+            ]
+        }
+    ]
+}

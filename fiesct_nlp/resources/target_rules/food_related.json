@@ -1,0 +1,114 @@
+{
+    "target_rules": [
+        {
+            "literal": "food access",
+            "category": "ACCESS"
+        },
+        {
+            "literal": "access to food",
+            "category": "ACCESS",
+            "pattern": [
+                {"LOWER": "access"},
+                {"LOWER": "to", "OP": "?"},
+                {"LOWER": {"IN": ["food", "meals"]}}
+            ]
+        },
+        {
+            "literal": "buy food",
+            "category": "ACCESS",
+            "pattern": [
+                {"LOWER": {"IN": ["buy", "purchase"]}},
+                {"LOWER": "food"}
+            ]
+        },
+        {
+            "literal": "grocery store",
+            "category": "GROCERY_STORE",
+            "pattern": [
+                {"LOWER": "grocery"},
+                {"LOWER": {"IN": ["store", "stores", "shops"]}}
+            ]
+        },
+        {
+            "literal": "dollar store",
+            "category": "GROCERY_STORE",
+            "pattern": [
+                {"LOWER": "dollar"},
+                {"LOWER": {"IN": ["store", "stores", "shops", "tree", "trees"]}}
+            ]
+        },
+        {
+            "literal": "food",
+            "category": "FOOD"
+        },
+        {
+            "literal": "food needs",
+            "category": "FOOD",
+            "pattern": [
+                {"LOWER": "food"},
+                {"LOWER": "-", "OP": "?"},
+                {"LOWER": "related", "OP": "?"},
+                {"LOWER": {"IN": ["need", "needs", "concern", "concerns", "problem", "problems", "issue", "issues"]}}
+            ],
+            "attributes": {"is_need": true}
+        },
+        {
+            "literal": "meal",
+            "category": "FOOD",
+            "pattern": [{"LOWER": {"IN": ["meal", "meals"]}}]
+        },
+        {
+            "literal": "fast food",
+            "category": "FOOD"
+        },
+        {
+            "literal": "meal prep",
+            "category": "MEAL_PREP"
+        },
+        {
+            "literal": "weight loss",
+            "category": "SYMPTOM"
+        },
+        {
+            "literal": "lose weight",
+            "category": "SYMPTOM",
+            "pattern": [
+                {"LOWER": {"IN": ["lose", "lost", "losing", "loses"]}},
+                {"LOWER": "weight"}
+            ]
+        },
+        {
+            "literal": "underweight",
+            "category": "SYMPTOM"
+        },
+        {
+            "literal": "malnutrition",
+            "category": "SYMPTOM"
+        },
+        {
+            "literal": "inadequate energy intake",
+            "category": "SYMPTOM",
+            "pattern": [
+                {"LOWER": "inadequate"},
+                {"LOWER": {"IN": ["energy", "food"]}},
+                {"LOWER": "intake"}
+            ]
+        },
+        {
+            "literal": "weight gain",
+            "category": "SYMPTOM"
+        },
+        {
+            "literal": "gain weight",
+            "category": "SYMPTOM",
+            "pattern": [
+                {"LOWER": {"IN": ["gain", "gained", "gaining", "gains"]}},
+                {"LOWER": "weight"}
+            ]
+        },
+        {
+            "literal": "overweight",
+            "category": "SYMPTOM"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "resources": [
+    {
+      "target_matcher": [
+        "target_rules/food_insecurity.json",
+        "target_rules/food_assistance.json",
+        "target_rules/food_related.json",
+        "target_rules/pseudo.json"
+
+      ],
+      "context": [
+        "base_context_rules.json",
+        "context_rules.json"
+      ],
+      "sectionizer": [
+        "section_rules.json",
+        "base_section_rules.json",
+        "rehoused/section_rules.json"
+      ]
+    }
+  ]
+}

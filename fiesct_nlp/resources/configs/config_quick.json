@@ -1,0 +1,31 @@
+{
+  "resources": [
+    {
+      "concept_tagger": [
+        "rehoused/concept_tag_rules.json"
+      ],
+      "target_matcher": [
+        "target_rules/food_insecurity.json",
+        "target_rules/food_assistance.json",
+        "target_rules/food_related.json",
+        "target_rules/pseudo.json",
+        "target_rules/social_support.json",
+        "target_rules/transportation.json",
+        "rehoused/doubling_up.json",
+        "rehoused/evidence_of_homelessness.json",
+        "rehoused/evidence_of_housing.json",
+        "rehoused/risk_of_homelessness.json",
+        "rehoused/template.json",
+        "rehoused/temporary_housing.json"
+      ],
+      "context": [
+        "context_rules.json",
+        "rehoused/context_rules.json"
+      ],
+      "sectionizer": [
+        "section_rules.json",
+        "rehoused/section_rules.json"
+      ]
+    }
+  ]
+}

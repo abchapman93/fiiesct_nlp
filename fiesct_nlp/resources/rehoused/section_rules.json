@@ -1,0 +1,2960 @@
+{
+  "section_rules": [
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "assessment_plan",
+      "literal": "PLAN:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "assessment_plan",
+      "literal": "Plan:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "comment",
+      "literal": "Comments:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "KNOWN_QUESTIONNAIRE",
+      "literal": "In the past 2 months, have you been living in stable housing that you own, rent, or stay in as part of a household?"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "KNOWN_QUESTIONNAIRE",
+      "literal": "Housing stability: How would you describe your current housing situation?"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "KNOWN_QUESTIONNAIRE",
+      "literal": "How would you describe the Veteran's housing situation at program exit?"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "KNOWN_QUESTIONNAIRE",
+      "literal": "Housing stability: How would you describe the Veteran?s housing situation at program exit?"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "KNOWN_QUESTIONNAIRE",
+      "literal": "What was the Veteran's housing arrangement prior to program entry"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "KNOWN_QUESTIONNAIRE",
+      "literal": "What is the Veteran's housing arrangement at program exit?"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "KNOWN_QUESTIONNAIRE",
+      "literal": "Where are you currently living?"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Allergies:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Pain:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Weight:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Pulse:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Temperature:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Blood Pressure:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Mood:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Respiration:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "comment",
+      "literal": "Comment:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "assessment_plan",
+      "literal": "ASSESSMENT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Height:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "ALLERGIES:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "chief_complaint",
+      "literal": "Chief Complaint:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Other:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Speech:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "HPI:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "HEENT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "diagnosis",
+      "literal": "Diagnosis:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Affect:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Date:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Intervention:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Provider:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Skin:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "mental_status",
+      "literal": "Mental Status:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Appearance:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Vital Signs:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "BMI:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "problem_list",
+      "literal": "Problem:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "problem_list",
+      "literal": "ACTIVE PROBLEMS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "problem_list",
+      "literal": "ACTIVE PROBLEM(S):"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "problem_list",
+      "literal": "ACTIVE PROBLEM LIST"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_needs",
+      "literal": "NEEDS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_needs",
+      "literal": "Patient Needs:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_needs",
+      "literal": "stressors:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_needs",
+      "literal": "Have you had any recent stressful event in your life, such as medical, financial, housing, employment, legal, or personal relationship, that is impacting you in a negative way?"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "SSN:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "GI:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "BP:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Lungs:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Assessment:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "chief_complaint",
+      "literal": "CHIEF COMPLAINT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "chief_complaint",
+      "literal": "CC:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Medications:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Activity:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "MEDICATIONS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "VITAL SIGNS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Name:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Thought Content:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Age:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "MSE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Sig:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "objective",
+      "literal": "OBJECTIVE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Length:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "subjective",
+      "literal": "SUBJECTIVE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Thought Process:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Temp:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "diagnosis",
+      "literal": "DIAGNOSIS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Nutrition:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_goals",
+      "literal": "Goal:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Mobility:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Procedure:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "problem_list",
+      "literal": "PROBLEM:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "physical_exam",
+      "literal": "PHYSICAL EXAM:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "ROS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Duration:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "DATE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Insight:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "mental_status",
+      "literal": "MENTAL STATUS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Sensory Perception:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Moisture:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "SKIN:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Friction:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Labs:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "LABS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Report Released Date/Time:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "diagnosis",
+      "literal": "DX:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "CV:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "diagnosis",
+      "literal": "Dx:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "ID:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Caller Response:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Evaluation/Management Code:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Resp:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "past_medical_history",
+      "literal": "PMH:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "OD:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Ending at:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Neuro:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "General:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "OS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "comment",
+      "literal": "COMMENTS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Orientation:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "history_of_present_illness",
+      "literal": "HISTORY OF PRESENT ILLNESS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "history_of_present_illness",
+      "literal": "HISTORY OF PRESENTING PROBLEM:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "history_of_present_illness",
+      "literal": "PRESENTING PROBLEM:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Cardiac:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "REVIEW OF SYSTEMS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "VITALS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Disposition:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Time:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "GU:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Starting at:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Edema:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "mental_status",
+      "literal": "MENTAL STATUS EXAM:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "mental_status",
+      "literal": "Behavior:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "topic",
+      "literal": "Topic:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Author:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "SAFETY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Staff Name:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "VA HOMES Veteran ID:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "HYGIENE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Location:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PAIN:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "MEDICATION RECONCILIATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Phone:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Access:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "diagnosis",
+      "literal": "Diagnoses:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "ELIMINATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Neck:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Respiratory:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Directions:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Axis III:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "TIME:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Axis II:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "GENERAL:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Abdomen:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Quantity:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Method:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Extremities:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Axis IV:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Contact Phone Number:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "assessment_plan",
+      "literal": "TREATMENT PLAN:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Vitals:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Glucose:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Cardiovascular:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_goals",
+      "literal": "OBJECTIVE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_goals",
+      "literal": "OBJECTIVES:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_goals",
+      "literal": "GOAL:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_goals",
+      "literal": "GOALS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_goals",
+      "literal": "Long Term Goals:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_goals",
+      "literal": "Short Term Goals:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Arrival:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Hemoglobin:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "HOMES Episode Start Date:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_education",
+      "literal": "Education:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_education",
+      "literal": "Education Topic:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Hematocrit:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Machine:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Caller Area:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Interventions:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Musculoskeletal:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Patient Identfied by:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "MOBILITY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Routine Orders:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Dialyzer:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Patient Name:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "past_medical_history",
+      "literal": "PAST HISTORY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_instructions",
+      "literal": "Discharge instructions:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Post Assessment:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "NEURO:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Departure Method:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "assessment_plan",
+      "literal": "ASSESSMENT/PLAN:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Goal weight:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Abd:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "NECK:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Handoff:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Judgment:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Facility Appointed PCP:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "impression",
+      "literal": "Impression:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "social_history",
+      "literal": "Marital Status:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Lead Case Manager:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Pulse Oximetry:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Identified problem:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Score:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PHYSICAL EXAMINATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Progress:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "DOB:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "subjective",
+      "literal": "Subjective:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "DISPOSITION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "CARDIOVASCULAR:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Team:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "ABDOMEN:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_education",
+      "literal": "PATIENT EDUCATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Ext:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "SPEECH:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Issued:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Gen:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Released:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Subject:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Eye Contact:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Heart:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Memory:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "RESPIRATORY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Attitude:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "INSIGHT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Fall Risk:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PAIN ASSESSMENT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Status:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Program Entry Date:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "problem_list",
+      "literal": "Active Problems:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "problem_list",
+      "literal": "PROBLEM LIST:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "problem_list",
+      "literal": "Computerized Problem List is the source for the following:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "problem_list",
+      "literal": "Computerized Problem List"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "GAF Score:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Risk Assessment:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "RTC:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Active Medications:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Constitutional:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "NOTE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "impression",
+      "literal": "IMPRESSION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "mental_status",
+      "literal": "THOUGHT PROCESS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "HEART:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Usually Taken for:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Address:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "following:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Neurological:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "AREA OF FUNCTION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PATIENT ACUITY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "MOOD:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Outpatient:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "RR:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Patient:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "GEN:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Dialysis Machine Checklist:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "AGE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Physical Exam:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "DATE/TIME PATIENT ENTERED TREATMENT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "TREATMENT PLAN TYPE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "EXTREMITIES:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_goals",
+      "literal": "Goals:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "diagnosis",
+      "literal": "DIAGNOSES:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Date/Time:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "TEAM MEMBERS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "VISIT DATE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Narrative Assessment:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "assessment_plan",
+      "literal": "Assessment/Plan:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "CLINICS OR PROGRAMS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Scale:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Appetite:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PATIENT PARTICIPATION IN TREATMENT PLANNING:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Group:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Procedures:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "LUNGS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "AFFECT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "ABD:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Cognition:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Respirations:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "From:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Meds:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "ACTIVITY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "TREATMENT PLAN PROBLEMS/NEEDS LISTED BY PRIORITY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "DATA:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Insight/Judgment:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Plan Renewal Date:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "INTERDISCIPLINARY INTEGRATED SUMMARY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "IDENTIFYING INFORMATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "THOUGHT CONTENT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "family_history",
+      "literal": "FAMILY HISTORY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "CVS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Chest:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Psychiatric:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Legal:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "EXT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PRIMARY CLINIC OR PROGRAM:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "intertions",
+      "literal": "INTERVENTIONS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "CHEST:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "CLINICIAN:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PROGRESS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "RELATED TO:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Medication Reconciliation:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Members present:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Session lasted:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "social_history",
+      "literal": "Social History:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "sleep",
+      "literal": "Sleep:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_education",
+      "literal": "EDUCATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "To:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Group Leader:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Education:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Tobacco:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Group Name:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Class Code:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Legend:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Gender:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "JUDGMENT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Modalities:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "NUTRITIONAL STATUS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "FOOD AND FLUIDS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Concentration:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Sent:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PATIENT NAME:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "NUTRITION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "SH:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "FAMILY PARTICIPATION IN TREATMENT PLANNING:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "reason_for_visit",
+      "literal": "REASON FOR VISIT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "suicide_screen",
+      "literal": "SUICIDE RISK SCREEN:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "APPEARANCE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "SHIFT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Issue Date:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "RESP:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Pulse Ox:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "MUSCULOSKELETAL:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Future Appointments:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "EKG:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Visit Date:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Eyes:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Attention:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "INTERVENTION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PROCEDURE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "MH TREATMENT COORDINATOR:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "BEHAVIOR:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Additional Comments:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PREOPERATIVE DIAGNOSIS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "mental_status",
+      "literal": "Thought content:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "assessment_plan",
+      "literal": "ASSESSMENT AND PLAN:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "POSTOPERATIVE DIAGNOSIS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "MENTAL STATUS EXAMINATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Diet:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Refills:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "MEDS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "NEUROLOGICAL:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Reporting Lab:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "GASTROINTESTINAL:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "DURATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Ethnic:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "mental_status",
+      "literal": "MENTAL HEALTH DIAGNOSES AND RELEVANT MEDICAL CONDITIONS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Psychosis:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "MEDICATION LIST:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "summary",
+      "literal": "Summary:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "TOPIC:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PSH:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Psych:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "VS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Verbalize understanding:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PATIENT ED TOPIC:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Eligibility:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Admission Date:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "GAF:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "ACTIVITY AND REST:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Evaluation:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Primary Care Provider:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "NON VA MEDS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "family_history",
+      "literal": "Family History:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "OTHER:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Alcohol:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Drugs:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "HOMICIDE RISK:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Allergies/ADR:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_education",
+      "literal": "Patient education:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Call Type:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "WEIGHT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PRESCRIBER:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Shift Activity:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "BEHAVIORS THIS SHIFT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "LOCOMOTION DURING THIS SHIFT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Patient Phone Number:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Pain level:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Judgement:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Military History:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "past_medical_history",
+      "literal": "PMHx:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "past_medical_history",
+      "literal": "Patient History:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Clinical Reminders:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "ORIENTATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Neurologic:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Precautions:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Expected Outcome:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Medication:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Medical:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "HT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "ADDITIONAL COMMENTS/INFORMATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "recommendations",
+      "literal": "RECOMMENDATIONS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "IMAGING:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "WT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Emotions:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PULSE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Administrative Closure:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "SODIUM:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Patient Phone:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Problem/need:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "HR:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Falls:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Time Out:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_strengths",
+      "literal": "Strengths:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_strengths",
+      "literal": "STRENGTHS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_strengths",
+      "literal": "STRENGTHS/ABILITIES:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "HISTORY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Cognitive:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Focus:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "ACTIVITIES:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Program:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Pain Assessment:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "FH:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Note:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "CURRENT MEDICATIONS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "ESTIMATED RISK LEVEL:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "TOILETING/ELIMINATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "General Appearance:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "location",
+      "literal": "LOCATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Impulse Control:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Motor Activity:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Drainage:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Ca:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "SUICIDE RISK FACTORS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "REMOTE ACTIVE MEDICATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "DIET:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "MEMORY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Psychomotor Activity:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Problem/Need:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "HGB:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "APPOINTMENT ATTENDANCE SUMMARY TO DATE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "recommendations",
+      "literal": "Recommendations:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Redness:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PARTICIPATION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Case Management Level:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Pulmonary:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Type:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Infection Control:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Program Name:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Chills:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Elevated Temperature:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Vital Signs Taken:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "COLLABORATION WITH OTHERS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "OPERATIVE FINDINGS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PROVIDER INTERVENTION:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "SUICIDE PROTECTIVE FACTORS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "SIGNIFICANT PSYCHOSOCIAL AND CONTEXTUAL FACTORS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "TEMP:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "EXAM:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "mental_status",
+      "literal": "PSYCH:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Allergies/Adverse Reactions:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Motor:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "past_medical_history",
+      "literal": "PAST SURGICAL HISTORY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "past_medical_history",
+      "literal": "CLINICAL HISTORY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "past_medical_history",
+      "literal": "BRIEF CLINICAL HISTORY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Submitted by:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Data:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "GENITOURINARY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Pain Score:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Dressing:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "LENGTH OF VISIT:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "SKIN CARE:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "BEHAVIORS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Behaviors Exhibited:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "BRIEF CLINICAL HISTORY:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Imaging:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Knee:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Site Code:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "Rhythm:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_instructions",
+      "literal": "Discussion/Instructions:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_needs",
+      "literal": "[{'TEXT': {'REGEX': 'Needs'}}, {'LOWER': ':'}]",
+      "pattern": [
+        {
+          "TEXT": {
+            "REGEX": "Needs"
+          }
+        },
+        {
+          "LOWER": ":"
+        }
+      ]
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_needs",
+      "literal": "PATIENT'S LIMITATIONS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_needs",
+      "literal": "DEFERRED PROBLEMS:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "referral_form",
+      "literal": "Referral Form"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "housing_status",
+      "literal": "Living Arrangements:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "housing_status",
+      "literal": "Current Housing:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "housing_status",
+      "literal": "[{'LOWER': 'living'}, {'LOWER': 'situation'}, {'LOWER': ':'}]",
+      "pattern": [
+        {
+          "LOWER": "living"
+        },
+        {
+          "LOWER": "situation"
+        },
+        {
+          "LOWER": ":"
+        }
+      ]
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "housing_status",
+      "literal": "[{'LOWER': 'current'}, {'LOWER': 'living'}, {'LOWER': 'situation'}, {'LOWER': ':'}]",
+      "pattern": [
+        {
+          "LOWER": "current"
+        },
+        {
+          "LOWER": "living"
+        },
+        {
+          "LOWER": "situation"
+        },
+        {
+          "LOWER": ":"
+        }
+      ]
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "last_30_days_questionnaire",
+      "literal": "During the past 30 days (1 month), how many days did you sleep in the following kinds of places?"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "past_medical_history",
+      "literal": "Medical Problems:",
+      "pattern": "medical problems:?\\n"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_instructions",
+      "literal": "DISCHARGE INSTRUCTIONS",
+      "pattern": "DISCHARGE INSTRUCTIONS:?\\n"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "social_history",
+      "literal": "Social History",
+      "pattern": [
+        {
+          "LOWER": {
+            "IN": [
+              "social",
+              "soc"
+            ]
+          }
+        },
+        {
+          "LOWER": {
+            "IN": [
+              "hx",
+              "history"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "problem_list",
+      "literal": "Active Problem",
+      "pattern": "\\nActive Problem\\n"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "UNK",
+      "literal": "PROGRESS TOWARDS GOAL",
+      "pattern": [
+        {
+          "LOWER": "progress"
+        },
+        {},
+        {
+          "LOWER": {
+            "IN": [
+              "goal",
+              "goals"
+            ]
+          }
+        },
+        {
+          "LOWER": ":",
+          "OP": "?"
+        }
+      ]
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "patient_needs",
+      "literal": "Weaknesses",
+      "pattern": "Weaknesses:?\\n"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "past_medical_history",
+      "literal": "Past Medical History:"
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "housing_status",
+      "literal": "Current housing situation:",
+      "pattern": [
+        {
+          "LOWER": "current",
+          "OP": "?"
+        },
+        {
+          "LOWER": "housing"
+        },
+        {
+          "LOWER": "situation"
+        },
+        {
+          "LOWER": ":"
+        }
+      ]
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "past_medical_history",
+      "literal": "Homeless History:",
+      "pattern": [
+        {
+          "LOWER": {
+            "REGEX": "homeless"
+          }
+        },
+        {
+          "LOWER": "history"
+        }
+      ]
+    },
+    {
+      "parents": [],
+      "parent_required": false,
+      "category": "housing_status",
+      "literal": "Housing Status:"
+    }
+  ]
+}

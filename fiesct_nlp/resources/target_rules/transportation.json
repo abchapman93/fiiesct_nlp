@@ -1,0 +1,17 @@
+{
+    "target_rules": [
+        {
+            "literal": "transportation",
+            "category": "TRANSPORTATION"
+        },
+        {
+            "literal": "transportation resources",
+            "category": "TRANSPORTATION"
+        },
+        {
+            "literal": "public transportation",
+            "category": "TRANSPORTATION",
+            "pattern": [{"LOWER": "public"}, {"LOWER": {"IN": ["transportation", "transit"]}}]
+        }
+    ]
+}

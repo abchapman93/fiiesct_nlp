@@ -1,0 +1,131 @@
+{
+    "target_rules": [
+        {
+            "literal": "apartment",
+            "category": "RESIDENCE",
+            "pattern": [
+                {
+                    "IS_TITLE": true,
+                    "OP": "+"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "apartment"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "<RESIDES>",
+            "category": "RESIDES",
+            "pattern": [
+                {
+                    "LEMMA": {
+                        "IN": [
+                            "reside",
+                            "stay",
+                            "live",
+                            "sleep"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "in",
+                            "at"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ]
+        },
+        {
+            "literal": "move in",
+            "category": "RESIDES",
+            "pattern": [
+                {
+                    "LEMMA": "move"
+                },
+                {
+                    "LOWER": "in"
+                }
+            ]
+        },
+        {
+            "literal": "current living situation:",
+            "category": "RESIDES"
+        },
+        {
+            "literal": "veteran",
+            "category": "PATIENT",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^vet(eran)?"
+                    }
+                },
+                {
+                    "LOWER": "'s",
+                    "OP": "?"
+                }
+            ]
+        },
+        {
+            "literal": "patient",
+            "category": "PATIENT",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "patient",
+                            "pt",
+                            "pt."
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "'s",
+                    "OP": "?"
+                }
+            ]
+        },
+        {
+            "literal": "patient",
+            "category": "PATIENT",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "my",
+                            "me"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "<DET> job",
+            "category": "EMPLOYMENT",
+            "pattern": [
+                {
+                    "POS": "DET"
+                },
+                {
+                    "LOWER": "job"
+                }
+            ]
+        },
+        {
+            "literal": "...Homeless",
+            "category": "HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "homeless"
+                    }
+                }
+            ]
+        }
+    ]
+}

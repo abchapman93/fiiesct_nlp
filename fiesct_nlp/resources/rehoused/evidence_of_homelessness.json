@@ -1,0 +1,1002 @@
+{
+    "target_rules": [
+        {
+            "literal": "homeless",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "homeless"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "chronic homelessness",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^chronic"
+                    }
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^homeless"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "literally homeless",
+            "category": "EVIDENCE_OF_HOMELESSNESS"
+        },
+        {
+            "literal": "homeless veteran",
+            "category": "EVIDENCE_OF_HOMELESSNESS"
+        },
+        {
+            "literal": "sleep in <HOMELESS_LOCATION>",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "RESIDES"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "concept_tag": "HOMELESS_LOCATION"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "sleep in park",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LEMMA": "sleep"
+                },
+                {
+                    "LOWER": "in"
+                },
+                {
+                    "POS": "DET",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "park"
+                }
+            ]
+        },
+        {
+            "literal": "live on streets",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LEMMA": "live"
+                },
+                {
+                    "LOWER": "on"
+                },
+                {
+                    "LOWER": "the",
+                    "OP": "?"
+                },
+                {
+                    "LEMMA": "street"
+                }
+            ]
+        },
+        {
+            "literal": "lose housing",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LEMMA": "lose"
+                },
+                {},
+                {
+                    "_": {
+                        "concept_tag": "RESIDENCE"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "<RESIDES> in <PROPN> Park",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "RESIDES"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "LOWER": "the",
+                    "OP": "?"
+                },
+                {
+                    "IS_TITLE": true,
+                    "OP": "+"
+                },
+                {
+                    "LOWER": "park"
+                }
+            ]
+        },
+        {
+            "literal": "At least 1 night",
+            "category": "EVIDENCE_OF_HOMELESSNESS"
+        },
+        {
+            "literal": "How long have you been homeless? ",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "how"
+                },
+                {
+                    "LOWER": "long"
+                },
+                {
+                    "LOWER": "have"
+                },
+                {
+                    "LOWER": "you"
+                },
+                {
+                    "LOWER": "been"
+                },
+                {
+                    "LOWER": "homeless"
+                },
+                {
+                    "LOWER": "?"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "LIKE_NUM": true,
+                    "OP": "+"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^(day|week|month|year)"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "Is veteran currently homeless? No",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "is"
+                },
+                {
+                    "LOWER": "the",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "veteran",
+                            "vet",
+                            "patient",
+                            "pt"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "currently"
+                },
+                {
+                    "LOWER": "homeless"
+                },
+                {
+                    "LOWER": "?"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "no",
+                            "n",
+                            "not"
+                        ]
+                    }
+                }
+            ],
+            "attributes": {
+                "is_negated": true
+            }
+        },
+        {
+            "literal": "Is veteran currently homeless? Yes",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "is"
+                },
+                {
+                    "LOWER": "the",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "veteran",
+                            "vet",
+                            "patient",
+                            "pt"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "currently"
+                },
+                {
+                    "LOWER": "homeless"
+                },
+                {
+                    "LOWER": "?"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "Yes",
+                            "y"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "lack of housing",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "Housing lack",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "homeless letter",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "homeless"
+                    }
+                },
+                {
+                    "LOWER": "verification",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "letter"
+                }
+            ]
+        },
+        {
+            "literal": "in need of housing",
+            "category": "EVIDENCE_OF_HOMELESSNESS"
+        },
+        {
+            "literal": "needs housing",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LEMMA": "need"
+                },
+                {
+                    "LOWER": "housing"
+                }
+            ]
+        },
+        {
+            "literal": "Needs: Housing",
+            "category": "EVIDENCE_OF_HOMELESSNESS"
+        },
+        {
+            "literal": "needs stable housing",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LEMMA": "need"
+                },
+                {
+                    "LOWER": "stable"
+                },
+                {
+                    "LOWER": "housing"
+                }
+            ]
+        },
+        {
+            "literal": "admitted from <HOMELESS_LOCATION>",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^admit"
+                    }
+                },
+                {
+                    "LOWER": "from"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "concept_tag": "HOMELESS_LOCATION"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "unoccupied apartment",
+            "category": "EVIDENCE_OF_HOMELESSNESS"
+        },
+        {
+            "literal": "residing outside",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LEMMA": {
+                        "IN": [
+                            "reside",
+                            "sleep",
+                            "stay"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "outdoors",
+                            "outside"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "v60.0",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "Lack of Housing (ICD-9-CM V60.0)",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "No - Not living in stable housing",
+            "category": "EVIDENCE_OF_HOMELESSNESS"
+        },
+        {
+            "literal": "Did the Veteran enter the HUD-VASH program?  Yes",
+            "category": "EVIDENCE_OF_HOMELESSNESS"
+        },
+        {
+            "literal": "Admitted to HUD-VASH",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "admitted"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "to",
+                            "into"
+                        ]
+                    }
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "concept_tag": "HUD-VASH"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "Homeless single person (SCT 160700001)",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "Homeless single person",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "(SCT 266935003)",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "z59.0",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "Dx: Z59.0 (homelessness)",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "Lack of Housing (Z59.0)",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "Homeless (SNOMED CT 32911000) Z59.0",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "Homelessness (ICD-10-CM Z59.0)",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "place not meant for human habitation",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "place"
+                },
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "LOWER": "meant"
+                },
+                {
+                    "LOWER": "for"
+                },
+                {
+                    "LOWER": "human"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^habitat"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "Place not meant for habitation",
+            "category": "EVIDENCE_OF_HOMELESSNESS"
+        },
+        {
+            "literal": "homelessness issues",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "homeless"
+                    }
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "issue"
+                    }
+                }
+            ],
+            "attributes": {
+                "is_hypothetical": true
+            }
+        },
+        {
+            "literal": "Is Veteran currently homeless? - No",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "is"
+                },
+                {
+                    "LOWER": "veteran"
+                },
+                {
+                    "LOWER": "currently"
+                },
+                {
+                    "LOWER": "homeless"
+                },
+                {
+                    "LOWER": "?"
+                },
+                {
+                    "LOWER": "-"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "no"
+                }
+            ],
+            "attributes": {
+                "is_negated": true
+            }
+        },
+        {
+            "literal": "Is Veteran currently homeless? - Yes",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "is"
+                },
+                {
+                    "LOWER": "veteran"
+                },
+                {
+                    "LOWER": "currently"
+                },
+                {
+                    "LOWER": "homeless"
+                },
+                {
+                    "LOWER": "?"
+                },
+                {
+                    "LOWER": "-"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "yes"
+                }
+            ]
+        },
+        {
+            "literal": "Veteran Meets Homeless Criteria:",
+            "category": "EVIDENCE_OF_HOMELESSNESS"
+        },
+        {
+            "literal": "Veteran is CHRONICALLY Homeless:",
+            "category": "IGNORE"
+        },
+        {
+            "literal": "does not know where they will be staying",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "does"
+                },
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "LOWER": "know"
+                },
+                {
+                    "LOWER": "where"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "he",
+                            "she",
+                            "they"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "will"
+                },
+                {
+                    "LOWER": "be",
+                    "OP": "?"
+                },
+                {
+                    "LEMMA": "stay"
+                }
+            ]
+        },
+        {
+            "literal": "Inadequate Housing",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "Homeless: No",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "homeless"
+                },
+                {
+                    "LOWER": ":"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "no"
+                }
+            ],
+            "attributes": {
+                "is_negated": true
+            }
+        },
+        {
+            "literal": "need a place  to stay",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LEMMA": "need"
+                },
+                {
+                    "LOWER": "a"
+                },
+                {
+                    "LOWER": "place"
+                },
+                {
+                    "LOWER": "to"
+                },
+                {
+                    "LOWER": "stay"
+                }
+            ]
+        },
+        {
+            "literal": "Diagnosis: Homeless",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "diagnosis"
+                },
+                {
+                    "TEXT": ":"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^homeless"
+                    }
+                }
+            ],
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "live out of a <HOMELESS_LOCATION>",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LEMMA": "live"
+                },
+                {
+                    "LOWER": "out"
+                },
+                {
+                    "LOWER": "of"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "concept_tag": "HOMELESS_LOCATION"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "live in <HOMELESS_LOCATION>",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LEMMA": "live"
+                },
+                {
+                    "LOWER": "in"
+                },
+                {
+                    "_": {
+                        "concept_tag": "HOMELESS_LOCATION"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "Homeless? Yes",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "TEXT": "Homeless"
+                },
+                {
+                    "TEXT": "?"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "TEXT": "Yes"
+                }
+            ]
+        },
+        {
+            "literal": "How long have you been homeless? <NUM> <TIME>",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "how"
+                },
+                {
+                    "LOWER": "long"
+                },
+                {
+                    "LOWER": "have"
+                },
+                {
+                    "LOWER": "you"
+                },
+                {
+                    "LOWER": "been"
+                },
+                {
+                    "LOWER": "homeless"
+                },
+                {
+                    "LOWER": "?"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "LIKE_NUM": true,
+                    "OP": "+"
+                },
+                {
+                    "LEMMA": {
+                        "IN": [
+                            "year",
+                            "day",
+                            "month",
+                            "week"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "<RESIDES> ... <HOMELESS_LOCATION>",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "HOMELESS_LOCATION"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "HOMELESS HISTORY",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "TEXT": {
+                        "REGEX": "HOMELESS"
+                    }
+                },
+                {
+                    "TEXT": "HISTORY"
+                }
+            ],
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "HOMELESSNESS",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LIKE_NUM": true
+                },
+                {
+                    "LOWER": "."
+                },
+                {
+                    "TEXT": "HOMELESSNESS"
+                }
+            ],
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "squatting",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "squatting",
+                            "squatted"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "was homeless",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "attributes": {
+                "is_historical": true
+            }
+        },
+        {
+            "literal": "section 8 voucher",
+            "category": "EVIDENCE_OF_HOMELESSNESS"
+        },
+        {
+            "literal": "HUD-VASH voucher",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "hud",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "/",
+                            "-"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "vash"
+                },
+                {
+                    "LOWER": "voucher"
+                }
+            ]
+        },
+        {
+            "literal": "housing choice voucher",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "housing",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "choice"
+                },
+                {
+                    "LOWER": "voucher"
+                }
+            ]
+        },
+        {
+            "literal": "housing choice voucher",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": "housing"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "voucher"
+                }
+            ]
+        },
+        {
+            "literal": "admitted to hud-vash",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "(admit|admission)"
+                    }
+                },
+                {
+                    "LOWER": "to"
+                },
+                {
+                    "_": {
+                        "concept_tag": "HUD-VASH"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "Is the Veteran entering a residential treatment program? Yes",
+            "category": "EVIDENCE_OF_HOMELESSNESS",
+            "pattern": "Is the Veteran entering a residential treatment program\\?[\\s]+Yes"
+        },
+        {
+            "literal": "<ADJ> homeless individuals",
+            "category": "IGNORE",
+            "pattern": [
+                {
+                    "POS": {
+                        "IN": [
+                            "ADJ",
+                            "ADV"
+                        ]
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "homeless"
+                },
+                {
+                    "LOWER": "individuals"
+                }
+            ]
+        }
+    ]
+}
